@@ -43,6 +43,7 @@
     @media all and (max-width: 800px) {
       font-size    : 52px;
       margin-bottom: 57px;
+      padding-top: 30px;
     }
 
     @media all and (max-width: 485px) {
@@ -82,7 +83,7 @@
       line-height: 21px;
     }
 
-    &:nth-child(2) {
+    &:last-child {
       margin-bottom: 84px;
 
       @media all and (max-width: 1440px) {
@@ -94,7 +95,7 @@
       }
 
       @media all and (max-width: 800px) {
-        margin-bottom: 41px;
+        margin-bottom: 70px;
       }
     }
   }

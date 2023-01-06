@@ -1,0 +1,70 @@
+// import Icon from './Icon';
+
+import styles from '../styles/SocialList.module.scss';
+
+const icons = [
+  {
+    _id: 1,
+    name: 'linkedin',
+    href: 'https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BhcBiHBFlT5yVayJn2EHCdQ%3D%3D',
+    path: 'social-icons/linkedin.svg',
+    size: 30,
+  },
+  {
+    _id: 2,
+    name: 'telegram',
+    href: 'https://t.me/Serg_svet',
+    path: 'social-icons/telegram.svg',
+    size: 28,
+  },
+  {
+    _id: 3,
+    name: 'gmail',
+    href: 'mailto:svitlychnyi1905@gmail.com',
+    path: 'social-icons/gmail.svg',
+    size: 30,
+  },
+  {
+    _id: 4,
+    name: 'github',
+    href: 'https://github.com/SergSvet87',
+    path: 'social-icons/github.svg',
+    size: 30,
+  },
+  {
+    _id: 5,
+    name: 'viber',
+    href: 'viber://chat?number=%2B380976157541',
+    path: 'social-icons/viber.svg',
+    size: 30,
+  },
+];
+
+const SocialList = () => {
+  return (
+    <ul className={styles.social}>
+      {icons.map((icon) => (
+        <li className={`${styles.social__item} item_social`} key={icon._id}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={icon.href}
+            className={styles.item_social__link}>
+            <span className={styles.item_social__text}>{icon.name}: </span>
+            {/* <Icon name={icon.name} size={icon.size} /> */}
+            <span className={styles.item_social__icon}>
+              <img
+                src={icon.path}
+                alt={icon.name}
+                width={icon.size}
+                height={icon.size}
+              />
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export default SocialList;

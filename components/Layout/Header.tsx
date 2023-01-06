@@ -9,10 +9,10 @@ import stylesMenu from '../../styles/MobileMenu.module.scss';
 
 const NAVIGATION = [
   // { id: 1, title: 'Головна', path: '/' },
-  { id: 1, title: 'Про мене', path: '/about' },
-  { id: 2, title: 'Навички', path: '/skills' },
-  { id: 3, title: 'Портфоліо', path: '/portfolio' },
-  { id: 4, title: "Зв'язатися зі мною", path: '/contact' },
+  { id: 1, title: 'Про мене', path: 'about' },
+  { id: 2, title: 'Навички', path: 'skills' },
+  { id: 3, title: 'Портфоліо', path: 'portfolio' },
+  { id: 4, title: "Зв'язатися зі мною", path: 'contact' },
 ];
 
 const Header = () => {
@@ -53,8 +53,8 @@ const Header = () => {
             {NAVIGATION.map((item) => (
               <li className={currentMenuItemClass} key={item.id}>
                 <Link
-                  href='/'
-                  to='about'
+                  href='#'
+                  to={item.path}
                   spy={spy}              
                   smooth={smooth}
                   offset={offset}
