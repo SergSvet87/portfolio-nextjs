@@ -16,7 +16,7 @@ const NAVIGATION = [
 ];
 
 const Header = () => {
-  const isMobile = useMediaQuery(640);
+  const isMobile = useMediaQuery(700);
   const [menuOpen, setMenuOpen] = useState(false);
   const currentMenuItemClass = isMobile ? stylesMenu.menu__item : styles.item;
 
@@ -48,10 +48,10 @@ const Header = () => {
             <span />
           </button>
         )}
-        <nav className={styles.nav}>
-          <ul className={styles.list}>
+        <nav className={`${isMobile ? stylesMenu.menu : styles.nav} ${menuOpen ? stylesMenu.open : ''}`}>
+          <ul className={`${isMobile ? styles.list_reset : styles.list}`}>
             {NAVIGATION.map((item) => (
-              <li className={styles.item} key={item.id}>
+              <li className={currentMenuItemClass} key={item.id}>
                 <Link
                   href='/'
                   to='about'

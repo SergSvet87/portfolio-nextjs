@@ -3,7 +3,7 @@
   top            : 0;
   left           : 0;
   width          : 100%;
-  padding        : 10px 0 21px;
+  padding        : 15px 0 10px;
   z-index        : 1;
   background     : rgba(21, 36, 72, 0.2);
   backdrop-filter: blur(125px);
@@ -25,31 +25,28 @@
 }
 
 .nav {
-  width: 71%;
+  width: 73%;
 
   @media all and (max-width: 1440px) {
-    width: 70%;
+    width: 71%;
   }
 
   @media all and (max-width: 1080px) {
-    width: 75.4%;
+    width: 76%;
   }
 
   @media all and (max-width: 800px) {
-    width: 83%;
+    width: 70%;
   }
 
   .list {
-    list-style : none;
-    margin     : 0;
-    padding    : 0;
     display    : flex;
     align-items: center;
 
     .item {
       transition: opacity .3s ease-in-out;
 
-      .link {
+      a {
         font-family: 'Lato';
         font-weight: 700;
         font-size  : 20px;
@@ -64,27 +61,30 @@
         margin-right: 48px;
 
         @media all and (max-width: 1080px) {
-          margin-right: 40px;
+          margin-right: 36px;
+        }
+
+        @media all and (max-width: 800px) {
+          margin-right: 20px;
         }
       }
     }
 
-    &:hover &__item:not(:hover) {
-      opacity   : 0.5;
+    &:hover .item:not(:hover) {
+      opacity   : 0.4;
       transition: opacity .3s ease-in-out;
     }
   }
 }
 
 .list_reset {
-  list-style-type: none;
-  margin         : 0;
-  padding        : 0;
+  // display: none;
+  margin: 0;
 }
 
 .burger_menu {
   width           : 64px;
-  height          : 30px;
+  height          : 40px;
   position        : relative;
   cursor          : pointer;
   display         : inline-block;
@@ -114,7 +114,7 @@
 }
 
 .burger_menu span:nth-child(2) {
-  top    : 13px;
+  top    : 17.5px;
   left   : 0;
   opacity: 1;
 
