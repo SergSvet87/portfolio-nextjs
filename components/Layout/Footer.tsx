@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Logo from '../Logo';
 // import SocialList from './SocialList';
 import { useMediaQuery } from '../../hooks/index';
-import styles from '../../styles/footer.module.scss';
+import styles from '../../styles/Footer.module.scss';
 
 const Footer = () => {
   const isMobile725 = useMediaQuery(725);
