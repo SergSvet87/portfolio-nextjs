@@ -16,14 +16,14 @@ const Footer = () => {
             {isMobile725}
             <Logo marginBottom={44} />
             <p className={styles.footer__copyright}>
-              © 2010-2021 <br />
-              «Иван»
+              © 2023 <br />
+              «Serhii»
             </p>
           </div>
           <div className={styles.footer__right}>
             <div className={styles.footer__right__top}>
               <p className={styles.footer__right__top__text}>
-                Поделитесь сайтом с друзьями:
+                Поділитися сайтом з друзями:
               </p>
               {!isMobile725}
             </div>
@@ -32,29 +32,29 @@ const Footer = () => {
                 <li className={styles.footer__list__item}>
                   <Link href="/cookie-policy" legacyBehavior>
                     <a className={styles.footer__list__item__link}>
-                      Политика использования файлов cookie
+                      Політика викоиання файлів cookie
                     </a>
                   </Link>
                 </li>
                 <li className={styles.footer__list__item}>
                   <Link href="/privacy-policy" legacyBehavior>
                     <a className={styles.footer__list__item__link}>
-                      Политика конфиденциальности
+                      Політика конфіденційності
                     </a>
                   </Link>
                 </li>
                 <li className={styles.footer__list__item}>
                   <Link href="/personal-data-policy" legacyBehavior>
                     <a className={styles.footer__list__item__link}>
-                      Политика обработки персональных данных
+                      Політика обробки персональних даних
                     </a>
                   </Link>
                 </li>
                 <li className={styles.footer__list__item}>
                   <Link href="/personal-data-of-clients" legacyBehavior>
                     <a className={styles.footer__list__item__link}>
-                      Согласие на обработку персональных данных клиентов -
-                      физических лиц
+                      Згода на обробку персональних даних клієнтів -
+                      фізичних осіб
                     </a>
                   </Link>
                 </li>

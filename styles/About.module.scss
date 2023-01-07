@@ -113,13 +113,13 @@
   }
 
   &__text {
-    margin     : 0;
-    max-width  : 512px;
-    font-family: 'Lato';
-    font-weight: 400;
-    font-size  : 20px;
-    line-height: 26px;
-    color      : #F2F2F2;
+    max-width    : 512px;
+    margin-bottom: 30px;
+    font-family  : 'Lato';
+    font-weight  : 400;
+    font-size    : 20px;
+    line-height  : 26px;
+    color        : #F2F2F2;
 
     @media all and (max-width: 1080px) {
       font-size: 18px;

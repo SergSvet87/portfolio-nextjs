@@ -22,8 +22,8 @@ const Header = () => {
 
   const spy = true;
   const smooth = true;
-  const offset = 140;
-  const duration = 500;
+  const offset = 50;
+  const duration = 700;
 
   const handleToggleMenu = () => {
       (document.querySelector('body') as HTMLBodyElement).classList.toggle('overflow-hidden');

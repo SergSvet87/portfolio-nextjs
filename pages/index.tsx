@@ -2,8 +2,8 @@ import Head from 'next/head';
 
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Skills from '../components/Skills';
-import Portfolio from '../components/Portfolio';
+import Skills from '../components/Skills/Skills';
+import Portfolio from '../components/Portfolio/Portfolio';
 import Contact from '../components/Contact';
 
 const Home = () => {
