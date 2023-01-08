@@ -1,10 +1,10 @@
-import MainTitle from './MainTitle';
+import MainTitle from '../MainTitle';
 
-import ArrowSvg from './ArrowSvg';
-import SocialList from './SocialList';
-import { useMediaQuery } from '../hooks';
+import ArrowSvg from '../ArrowSvg';
+import SocialList from '../Contact/SocialList';
+import { useMediaQuery } from '../../hooks';
 
-import styles from '../styles/About.module.scss';
+import styles from '../../styles/About.module.scss';
 
 const About = () => {
   const isMobile1080 = useMediaQuery(1080);

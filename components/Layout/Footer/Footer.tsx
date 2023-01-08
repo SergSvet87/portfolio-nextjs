@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import Logo from '../Logo';
-// import SocialList from './SocialList';
-import { useMediaQuery } from '../../hooks/index';
-import styles from '../../styles/Footer.module.scss';
+
+import Logo from '../../Logo';
+import SocialList from './SocialList';
+import { useMediaQuery } from '../../../hooks/index';
+import styles from '../../../styles/Footer.module.scss';
 
 const Footer = () => {
   const isMobile725 = useMediaQuery(725);
@@ -14,10 +15,9 @@ const Footer = () => {
         <div className={styles.footer__inner}>
           <div className={styles.footer__left}>
             {isMobile725}
-            <Logo marginBottom={44} />
+            <Logo marginBottom={30} />
             <p className={styles.footer__copyright}>
-              © 2023 <br />
-              «Serhii»
+              &copy; {new Date().getFullYear()} «Serhii»
             </p>
           </div>
           <div className={styles.footer__right}>
@@ -25,14 +25,14 @@ const Footer = () => {
               <p className={styles.footer__right__top__text}>
                 Поділитися сайтом з друзями:
               </p>
-              {!isMobile725}
+              {!isMobile725 && <SocialList />}
             </div>
             <div className={styles.footer__right__bottom}>
               <ul className={styles.footer__list}>
                 <li className={styles.footer__list__item}>
                   <Link href="/cookie-policy" legacyBehavior>
                     <a className={styles.footer__list__item__link}>
-                      Політика викоиання файлів cookie
+                      Політика виконання файлів cookie
                     </a>
                   </Link>
                 </li>
@@ -53,8 +53,8 @@ const Footer = () => {
                 <li className={styles.footer__list__item}>
                   <Link href="/personal-data-of-clients" legacyBehavior>
                     <a className={styles.footer__list__item__link}>
-                      Згода на обробку персональних даних клієнтів -
-                      фізичних осіб
+                      Згода на обробку персональних даних клієнтів - фізичних
+                      осіб
                     </a>
                   </Link>
                 </li>

@@ -1,7 +1,7 @@
-import MainTitle from '../MainTitle';
 import { useMediaQuery } from '../../hooks';
+import MainTitle from '../MainTitle';
 import ArrowSvg from '../ArrowSvg';
-import SocialList from '../SocialList';
+import SocialList from './SocialList';
 import ContactForm from './ContactForm';
 
 import styles from '../../styles/Contact.module.scss';

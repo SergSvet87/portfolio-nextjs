@@ -1,6 +1,6 @@
 // import Icon from './Icon';
 
-import styles from '../styles/SocialList.module.scss';
+import styles from '../../styles/SocialListAbout.module.scss';
 
 const icons = [
   {
