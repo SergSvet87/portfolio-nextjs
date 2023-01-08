@@ -61,6 +61,7 @@
   }
 
   &__text:nth-child(2) {
+    margin-top: 15px;
     margin-bottom: 88px;
 
     @media all and (max-width: 1440px) {
@@ -81,9 +82,8 @@
   }
 
   &__title {
-    margin       : 0;
     margin-bottom: 67px;
-    max-width    : 154px;
+    max-width    : 215px;
     position     : relative;
 
     @media all and (max-width: 1440px) {
