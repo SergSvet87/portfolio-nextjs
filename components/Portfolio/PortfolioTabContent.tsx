@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 import PortfolioTabItem from './PortfolioTabItem';
 
-import styles from '../../styles/portfolio.module.scss';
+import styles from '../../styles/Portfolio.module.scss';
 
 interface IPortfolioTabContent {
   tabItems: {

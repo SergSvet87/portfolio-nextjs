@@ -1,4 +1,4 @@
-import styles from '../../styles/portfolio.module.scss';
+import styles from '../../styles/Portfolio.module.scss';
 
 interface IPortfolioSliderItem {
   title: string;
