@@ -6,7 +6,7 @@ const icons = [
   {
     _id: 1,
     name: 'linkedin',
-    href: 'https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BhcBiHBFlT5yVayJn2EHCdQ%3D%3D',
+    href: 'https://www.linkedin.com/in/serhii-svitlychnyi',
     path: 'social-icons/linkedin.svg',
     size: 30,
   },

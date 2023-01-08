@@ -23,8 +23,10 @@
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-scroll": "^1.8.9",
     "react-spinners": "^0.13.7",
+    "react-toastify": "^9.1.1",
     "sass": "^1.57.1",
     "typescript": "4.9.4"
   },

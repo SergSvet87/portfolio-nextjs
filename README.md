@@ -1,6 +1,6 @@
 # APP Movie **(SPA)**
 Aпка з моїм портфоліо<br/>
-[DEMO LINK](https://SergSvet87.github.io/App_Movies/)<br/>
+[DEMO LINK](portfolio-nextjs-black-psi.vercel.app)<br/>
 
 ## Автори проєкту:
  **Сергій Світличний** Front-End Developer<br/>
