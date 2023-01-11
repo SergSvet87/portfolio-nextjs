@@ -24,7 +24,7 @@
   &__inner {
     display: flex;
 
-    @media all and (max-width: 725px) {
+    @media all and (max-width: 860px) {
       flex-direction: column;
       align-items   : center;
     }
@@ -43,7 +43,8 @@
     }
 
     @media all and (max-width: 1090px) {
-      width: 12%;
+      width       : 12%;
+      margin-right: 35px;
     }
 
     @media all and (max-width: 990px) {
@@ -51,16 +52,12 @@
       margin-right: 20px;
     }
 
-    @media all and (max-width: 725px) {
+    @media all and (max-width: 860px) {
       width         : auto;
       display       : flex;
       flex-direction: column;
       align-items   : center;
       margin-right  : 0;
-    }
-
-    @media all and (max-width: 580px) {
-      align-items: flex-start;
     }
   }
 
@@ -84,6 +81,7 @@
 
       @media all and (max-width: 1090px) {
         justify-content: center;
+        margin-bottom  : 33px;
       }
 
       @media all and (max-width: 990px) {
@@ -107,17 +105,38 @@
   &__list {
     column-count: 2;
 
-    @media all and (max-width: 990px) {
+    @media all and (max-width: 1090px) {
       column-count: auto;
+      display     : flex;
+      flex-wrap   : wrap;
+      align-items : flex-start;
+      gap         : 20px;
     }
 
-    @media all and (max-width: 725px) {
+    @media all and (max-width: 1065px) {
       display       : flex;
       flex-direction: column;
       align-items   : center;
     }
 
     &__item {
+
+      @media all and (max-width: 1090px) {
+        width: 40%;
+
+        &:last-child{
+          width: 54%;
+        }
+      }
+
+      @media all and (max-width: 1065px) {
+        width: 100%;
+
+        &:last-child{
+          width: 100%;
+        }
+      }
+
       &:not(:last-child) {
         @media all and (max-width: 990px) {
           margin-bottom: 16px;
@@ -128,20 +147,25 @@
         margin-bottom: 16px;
 
         @media all and (max-width: 1440px) {
-          margin-left  : 93px;
           margin-bottom: 20px;
         }
 
-        @media all and (max-width: 990px) {
+        @media all and (max-width: 1090px) {
           margin-left: 0;
+          margin-bottom: 0px;
         }
       }
 
       &:nth-child(2) {
         margin-left: 7px;
 
-        @media all and (max-width: 990px) {
+        @media all and (max-width: 1440px) {
           margin-left: 0;
+        }
+
+        @media all and (max-width: 1090px) {
+          margin-left  : 0;
+          margin-bottom: 0px;
         }
       }
 
@@ -150,44 +174,47 @@
         margin-left  : -43px;
 
         @media all and (max-width: 1440px) {
-          margin-left  : 3px;
           margin-bottom: 20px;
         }
 
-        @media all and (max-width: 990px) {
+        @media all and (max-width: 1090px) {
           margin-left: 0;
+          margin-bottom: 0;
         }
       }
 
       &:nth-child(4) {
         margin-left: -43px;
 
-        @media all and (max-width: 1440px) {
-          margin-left: -143px;
-        }
-
-        @media all and (max-width: 990px) {
+        @media all and (max-width: 1090px) {
           margin-left: 0;
         }
       }
 
-      &__link {
+      a {
         font-family: 'Montserrat';
         font-weight: 400;
         font-size  : 14px;
         color      : #06CAF9;
         display    : block;
+        transition : background .3s ease-in-out;
 
-        @media all and (max-width: 725px) {
+        @media all and (max-width: 520px) {
           text-overflow: ellipsis;
           white-space  : nowrap;
           overflow     : hidden;
-          width        : auto;
+          width        : 290px;
         }
 
-        @media all and (max-width: 580px) {
-          text-align: center;
-          width     : 290px;
+        // @media all and (max-width: 580px) {
+        //   text-align: center;
+        //   width     : 290px;
+        // }
+
+        &:hover {
+          background             : radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
     }

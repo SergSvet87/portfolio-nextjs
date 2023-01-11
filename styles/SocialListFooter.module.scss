@@ -2,6 +2,16 @@
   display    : flex;
   align-items: center;
 
+  @media all and (max-width: 860px) {
+    margin-bottom: 30px;
+  }
+
+  @media all and (max-width: 610px) {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__item {
     position   : relative;
     cursor     : pointer;
@@ -10,6 +20,10 @@
 
     &:not(:last-child) {
       margin-right: 40px;
+
+      @media all and (max-width: 870px) {
+        margin-right: 16px;
+      }
     }
   }
 }
